@@ -19,6 +19,8 @@ public class App
         displayBmiStatistics(bmiData);
     }
 
+    // asks the user if they would like to add bmi data, takes in any input outside of spaces
+    // and if it's not Y y N n it will go back to the beginning of the function
     static boolean moreInput()
     {
         String answer;
@@ -42,6 +44,7 @@ public class App
         return true; // actually not sure what's going on if i put a number then space enter that then put a space and = y it will somehow break out of the if else statement and return this
     }
 
+    // asks for user height if they add try and put in either 0 or a negative number it will go back to the beginning of the function
     static double getUserHeight()
     {
         Scanner scan = new Scanner(System.in);
@@ -60,6 +63,7 @@ public class App
         return height;
     }
 
+    // asks for user weight if they add try and put in either 0 or a negative number it will go back to the beginning of the function
     static double getUserWeight()
     {
         Scanner scan = new Scanner(System.in);
@@ -92,7 +96,7 @@ public class App
            average += bmi.calcBMI();
         }
 
-        System.out.printf("%.2f", average/ bmiData.size());
+        System.out.printf("The average of the data sample is: %.2f", average/ bmiData.size());
     }
 }
 
