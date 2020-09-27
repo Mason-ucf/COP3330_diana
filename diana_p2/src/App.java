@@ -96,6 +96,8 @@ public class App
            average += bmi.calcBMI();
         }
 
+        average = (double)Math.round(average * 100) / 100;
+
         System.out.printf("The average of the data sample is: %.2f", average/ bmiData.size());
     }
 }
