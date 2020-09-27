@@ -41,7 +41,7 @@ public class App
         {
             moreInput();
         }
-        return true; // actually not sure what's going on if i put a number then space enter that then put a space and = y it will somehow break out of the if else statement and return this
+        return true;
     }
 
     // asks for user height if they add try and put in either 0 or a negative number it will go back to the beginning of the function
